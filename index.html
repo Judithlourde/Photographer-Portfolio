@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <!-- CSS links -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,11 +21,13 @@
             <li class="container__list--item container__list--item--desk">  
                 <a href="#about">About</a>
             </li>
+            <!-- For mobile and desktop version -->
             <li class="container__list--item">  
                 <a href="#home">    
                     <img src="assets/logo.svg" class ="container__list--item--image" alt="logo">
                 </a>
             </li>
+            <!-- Hamburger for mobile version -->
             <li class="container__list--item container__list--item--mobile">    
                 <img src ="assets/hamburger.svg" class ="container--hamburger" alt ="hamburger-icon">    
             </li>
@@ -38,22 +41,22 @@
     </div>
     <div class="menu">
         <div class="menu__content">
-            <div class="menu__head">
-                <a href="#home">
+            <!-- <div class="menu__head"> -->
+                <!-- <a href="#home">
                     <img src="assets/logo.svg" class="menu__image" alt="logo">
-                </a>
-                <button class="menu__head--button">Close</button>
-            </div>
-            <div class="menu__item">
+                </a> -->
+                <button class="menu__content--button">Close</button>
+            <!-- </div> -->
+            <div class="menu__content--item">
                 <a href="#home">Home</a>
             </div>
-            <div class="menu__item">
+            <div class="menu__content--item">
                 <a href="#about">About</a>
             </div>
-            <div class="menu__item">
+            <div class="menu__content--item">
                 <a href="#portfolio">Portfolio</a>
             </div>
-            <div class="menu__item">
+            <div class="menu__content--item">
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -71,6 +74,7 @@
             photography and Sarah previously worked in advertising and design photography...</p>  
         </div>   
     </div>
+    <!-- Portfolio -->
     <section id="portfolio" class="portfolio"> 
     </section> 
     <footer class="contact" id="contact">

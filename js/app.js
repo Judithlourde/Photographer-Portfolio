@@ -15,6 +15,7 @@ const images = [
     {alt: 'couple', file: 'assets/img14.jpg', text: 'California', year: '2018'},
     {alt: 'couple', file: 'assets/img15.jpg', text: 'Denmark', year: '2021'}
 ];
+
 const backgroundImages = [
     { source: 'assets/home1.jpg' },
     { source: 'assets/home2.jpg' },
@@ -29,25 +30,29 @@ function change() {
     container.style.backgroundImage = 'url(' + backgroundImages[index].source + ')';
     index > 2 ? index = 0 : index++;
 }
+
 setInterval(change, 3000);
 
 const hamburgerButtons = document.querySelectorAll('.container--hamburger');
 [...hamburgerButtons].forEach (button => {
     button.addEventListener('click', openingMenu);
 });
+
 function openingMenu() {
     const visible =  document.querySelector('.menu');
     visible.style.visibility = "visible";   
 }
-const closeButtons = document.querySelectorAll('.menu__head--button');
+const closeButtons = document.querySelectorAll('.menu__content--button');
 [...closeButtons].forEach (closeButton => {
     closeButton.addEventListener('click', closingMenu);
 });
+
 function closingMenu() {
     const visible =  document.querySelector('.menu');
     visible.style.visibility = "hidden";   
 }
-const menuLinks = document.querySelectorAll('.menu__item');
+
+const menuLinks = document.querySelectorAll('.menu__content--item');
 [...menuLinks].forEach (menuLink => {
     menuLink.addEventListener ('click', closingMenu)      
 });
@@ -55,11 +60,12 @@ const menuLinks = document.querySelectorAll('.menu__item');
 const pictures = document.querySelector('.portfolio');
 
 for (let index = 0; index < images.length; index++) {
-
     const heading = document.createElement('h3');
     const paragraph = document.createElement('p');
+
     heading.innerText = images[index].text;
     paragraph.innerText = images[index].year;
+
     const divOverlay = document.createElement('div');
     divOverlay.className = 'portfolio__imagesJs--overlay';
     divOverlay.appendChild(heading);

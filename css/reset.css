@@ -1,0 +1,15 @@
+* {padding: 0; margin: 0; box-sizing: border-box}
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 1em;
+    overflow-x: hidden;
+    letter-spacing: 0.02rem;
+    background: #edecea; 
+   
+}
+a {
+    text-decoration: none;
+    color: #fbf6e5;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+}
