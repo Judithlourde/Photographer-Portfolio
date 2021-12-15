@@ -1,4 +1,9 @@
 * {padding: 0; margin: 0; box-sizing: border-box}
+
+* {
+    overflow-x: hidden;         /***** It hidden unwanted spaces for mobile  *****/
+} 
+
 body {
     font-family: 'Crimson Text', serif;
     font-size: 1em;
@@ -7,6 +12,7 @@ body {
     background: #edecea; 
    
 }
+
 a {
     text-decoration: none;
     color: #fbf6e5;
