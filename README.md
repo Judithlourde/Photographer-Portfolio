@@ -1,2 +1,7 @@
 # Photographer-Portfolio
-Portfolio for one frictional photographer.
+Portfolio website for a frictional photographer. 
+Functionality:
+Responsive Design
+- Animations for the images.
+- Used BEM - Block element modifier.
+- Grid system for images
